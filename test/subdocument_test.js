@@ -49,7 +49,6 @@ describe('Subdocuments', () => {
             })
             .then(() => User.findOne({ name: 'Joe' }))
             .then((user) => {
-                console.log(user);
                 assert(user.posts.length === 0)
                 done();
             })
